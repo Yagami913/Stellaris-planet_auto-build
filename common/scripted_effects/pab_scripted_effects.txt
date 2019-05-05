@@ -5004,8 +5004,8 @@ pab_build_growth = {
 	else_if = {
 		limit = { 
 			owner = {
-				 has_technology = tech_robotic_workers 
-				 NOT = { is_gestalt = no }
+				has_technology = tech_robotic_workers 
+				is_gestalt = no
 			}
 			NOT = { has_building = building_robot_assembly_plant }
 		}
@@ -5023,7 +5023,7 @@ pab_build_growth = {
 pab_build_unity = {
 
 	if = {
-		limit = { owner ={ is_hive_empire = yes }}
+		limit = { owner = { is_hive_empire = yes }}
 		set_planet_flag = "building_hive_node_flag"
 	}
 	else_if = {
