@@ -5518,7 +5518,14 @@ pab_build_disctrict_focus = {
 pab_build_desposit = {
 
 	if = {
-		limit = { has_deposit = d_betharian_deposit }
+		limit = { 
+			AND = {
+				NOT = { has_modifier = resort_colony }
+				has_deposit = d_betharian_deposit
+				NOT = { has_building = building_betharian_power_plant }
+				owner = { has_technology = tech_mine_betharian }
+			}
+		}
 		set_planet_flag = "building_betharian_power_plant_flag"
 	}
 	else_if = {
