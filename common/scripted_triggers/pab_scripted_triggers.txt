@@ -301,6 +301,13 @@ pab_can_build_resource_focus = {
 
 pab_can_build_manufacture_focus = {
     free_building_slots > 0
+	OR = {
+		has_building = "building_major_capital"
+		has_building = "building_system_capital"
+		has_building = "building_machine_major_capital"
+		has_building = "building_machine_system_capital"
+		has_building = "building_hive_major_capital"
+	}
     OR = {
         AND = {
             has_planet_flag = "pab_alloy"
