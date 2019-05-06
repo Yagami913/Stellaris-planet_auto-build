@@ -193,7 +193,7 @@ pab_can_build_growth = {
         AND = {
             owner = { 
                 has_technology = tech_frontier_health 
-                NOT = { is_gestalt = no }
+                is_gestalt = no
             }
             NOT = { has_building = building_clinic }
             NOT = { has_building = building_hospital }
@@ -201,7 +201,7 @@ pab_can_build_growth = {
         AND = {
             owner = { 
                 has_technology = tech_robotic_workers 
-                NOT = { is_gestalt = no }
+                is_gestalt = no
             }
             NOT = { has_building = building_robot_assembly_plant }
         }
@@ -241,7 +241,7 @@ pab_can_build_unity = {
         AND = {
             owner = { 
                 is_megacorp = no
-                is_spiritualist = yes
+                is_spiritualist = no
                 is_gestalt = no
             }
             NOT = { has_building =  building_autochthon_monument }
