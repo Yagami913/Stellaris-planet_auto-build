@@ -5021,7 +5021,6 @@ pab_build_growth = {
 }
 
 pab_build_unity = {
-
 	if = {
 		limit = { owner = { is_hive_empire = yes }}
 		set_planet_flag = "building_hive_node_flag"
@@ -5032,21 +5031,21 @@ pab_build_unity = {
 	}
 	else_if = {
 		limit = {owner = { is_spiritualist = yes }}
-		set_planet_flag = "building_temple" 
+		set_planet_flag = "building_temple_flag" 
 	}
 	else_if = {
 		limit = {owner = { is_megacorp = yes }}
-		set_planet_flag = "building_corporate_monument" 
+		set_planet_flag = "building_corporate_monument_flag" 
 	}
 	else_if = {
 		limit = {
 			owner = { 
 				is_megacorp = no
-				is_spiritualist = yes
+				is_spiritualist = no
 				is_gestalt = no
 			}
 		}
-		set_planet_flag = "building_autochthon_monument" 
+		set_planet_flag = "building_autochthon_monument_flag" 
 	}
 }
 

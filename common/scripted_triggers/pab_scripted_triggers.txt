@@ -241,7 +241,7 @@ pab_can_build_unity = {
         AND = {
             owner = { 
                 is_megacorp = no
-                is_spiritualist = yes
+                is_spiritualist = no
                 is_gestalt = no
             }
             NOT = { has_building =  building_autochthon_monument }
