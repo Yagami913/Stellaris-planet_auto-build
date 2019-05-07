@@ -201,6 +201,7 @@ pab_can_build_growth = {
         AND = {
             owner = { 
                 has_technology = tech_robotic_workers 
+                NOT = { has_policy_flag = robots_outlawed }
                 is_gestalt = no
             }
             NOT = { has_building = building_robot_assembly_plant }
